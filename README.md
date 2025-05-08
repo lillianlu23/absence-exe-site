@@ -1,27 +1,28 @@
-# absence-exe-site
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>In Between: Absence.exe</title>
-  <style>
-    body {
-      background: black;
-      color: white;
-      font-family: monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-  </style>
-</head>
-<body>
-  <h1>Absence.exe is running...</h1>
-  <p>Welcome to the void.</p>
-</body>
-</html>
+# In Between: Absence.exe
+
+This repository contains the source files for the virtual exhibition **In Between: Absence.exe** — a web-based experience exploring the relationship between absence and presence through negative space, minimal interaction, and immersive design.
+
+🕳️ **Live site:**  
+[https://your-username.github.io/absence-exe-site](https://your-username.github.io/absence-exe-site)
+
+## 🔧 Technologies Used
+
+- HTML / CSS
+- GitHub Pages for hosting
+
+## 📁 Structure
+
+- `index.html` – Main exhibition landing page
+- More pages (e.g. `about.html`, `open-call.html`) coming soon
+
+## 🧠 Concept
+
+**“Absence.exe” is not an error — it’s an invitation.**  
+This project turns blankness into a system. It invites viewers to slow down, explore what isn’t there, and consider how design can emerge from voids.
+
+For the full concept and open call, visit the site or contact me directly.
+
+## 📫 Contact
+
+For collaboration or submission inquiries:  
+📧 lillian.lu323@gmail.com  
