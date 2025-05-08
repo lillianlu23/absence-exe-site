@@ -1,6 +1,27 @@
 # absence-exe-site
-git init
-git remote add origin https://github.com/xinyu/absence-exe-site.git
-git add .
-git commit -m "add full project with package.json"
-git push origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>In Between: Absence.exe</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Absence.exe is running...</h1>
+  <p>Welcome to the void.</p>
+</body>
+</html>
