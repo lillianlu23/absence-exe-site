@@ -2,5 +2,5 @@
 git init
 git remote add origin https://github.com/xinyu/absence-exe-site.git
 git add .
-git commit -m "Initial commit"
-git push -u origin main
+git commit -m "add full project with package.json"
+git push origin main
