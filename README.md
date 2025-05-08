@@ -3,7 +3,7 @@
 This repository contains the source files for the virtual exhibition **In Between: Absence.exe** — a web-based experience exploring the relationship between absence and presence through negative space, minimal interaction, and immersive design.
 
 🕳️ **Live site:**  
-[https://your-username.github.io/absence-exe-site](https://your-username.github.io/absence-exe-site)
+[https://xinyu.github.io/absence-exe-site](https://xinyu.github.io/absence-exe-site)
 
 ## 🔧 Technologies Used
 
