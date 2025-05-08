@@ -1,91 +1,74 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-
-export default function InBetweenHome() {
-  const [entered, setEntered] = useState(false);
-  const [page, setPage] = useState("home");
-
-  const renderPage = () => {
-    switch (page) {
-      case "exhibition":
-        return (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex flex-col items-center justify-center w-full h-full px-6 text-center"
-          >
-            <h2 className="text-xl md:text-2xl">Exhibition</h2>
-            <p className="mt-4 text-sm md:text-base max-w-xl">
-              This is the main exhibition space. More content coming soon.
-            </p>
-          </motion.div>
-        );
-      case "about":
-        return (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="flex flex-col items-center justify-center w-full h-full px-6 text-center"
-          >
-            <h2 className="text-xl md:text-2xl">About</h2>
-            <p className="mt-4 text-sm md:text-base max-w-xl">
-              In Between: Absence.exe is a virtual exhibition exploring negative space,
-              absence, and immersion in digital environments.
-            </p>
-          </motion.div>
-        );
-      case "home":
-      default:
-        return (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="flex flex-col items-center justify-center w-full h-full px-6 text-center"
-          >
-            <h2 className="text-lg md:text-2xl">You are now in between.</h2>
-            <p className="mt-4 max-w-xl text-sm md:text-base">
-              Explore the virtual void. Move slowly. Let absence reveal form.
-            </p>
-          </motion.div>
-        );
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>In Between: Absence.exe</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
-  };
 
-  return (
-    <div className="w-screen h-screen bg-black text-white font-mono">
-      {!entered ? (
-        <div
-          className="flex items-center justify-center w-full h-full cursor-pointer"
-          onClick={() => setEntered(true)}
-        >
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            className="text-xl md:text-3xl text-center px-6"
-          >
-            Absence.exe is running... <br /> Click to enter.
-          </motion.h1>
-        </div>
-      ) : (
-        <div className="flex flex-col w-full h-full">
-          <nav className="flex justify-center gap-6 p-4 border-b border-white/10 text-sm md:text-base">
-            <button onClick={() => setPage("home")} className="hover:underline">
-              Home
-            </button>
-            <button onClick={() => setPage("exhibition")} className="hover:underline">
-              Exhibition
-            </button>
-            <button onClick={() => setPage("about")} className="hover:underline">
-              About
-            </button>
-          </nav>
-          <div className="flex-1 flex items-center justify-center">
-            {renderPage()}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
+    nav {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="open-call.html">Open Call</a>
+    <a href="works.html">Works</a>
+  </nav>
+
+  <main>
+    <h1>Absence.exe is running...</h1>
+    <p>Welcome to the void. Use the menu above to explore presence through absence.</p>
+  </main>
+
+</body>
+</html>
