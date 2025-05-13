@@ -56,11 +56,69 @@
       background-color: white;
       color: black;
     }
-  </style>
+
+  <style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-container {
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+    margin-top: 20vh;
+  }
+
+  .logo-container.reveal {
+    opacity: 1;
+  }
+
+  .inbetween {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .absence {
+    font-size: 1.3rem;
+    color: #888888;
+    letter-spacing: 0.1rem;
+  }
+
+  .buttons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .buttons a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+  }
+
+  .buttons a:hover {
+    background-color: white;
+    color: black;
+  }
+</style>
+
 </head>
 <body>
 
-    <h1>Absence.exe is running...</h1>
+   <div class="logo-container" id="logo">
+    <div class="inbetween">In Between //</div>
+    <div class="absence">absence.exe</div>
+  </div>
+
+  <h1>Absence.exe is running...</h1>
   <p>You are now in between. Let the void guide you through absence, delay, and hidden space.</p>
 
   <div class="buttons">
